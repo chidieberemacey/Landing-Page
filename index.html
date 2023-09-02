@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Types</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+				<img src="img/logo.jpg" alt="">
+			</nav>
+
+			<div class="main-content">
+
+				<div class="image-pista">
+					<div class="swiper mySwiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="img/image_1.jpeg" alt=""></div>
+							<div class="swiper-slide"><img src="img/image_2.jpeg" alt=""></div>
+							<div class="swiper-slide"><img src="img/image_3.jpeg" alt=""></div>
+						</div>
+						<div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+					</div>
+
+				</div>
+
+				<div class="main-text">
+					<h1>The pistachios</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					<button>Know More</button>
+				</div>
+			</div>
+
+			<div class="right">
+
+				<div class="box">
+					<div class="image">
+						<img src="img/image_4.jpeg" alt="">
+					</div>
+					<div class="inner-box">
+						<h3>100% Organic</h3>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image">
+						<img src="img/image_5.jpeg" alt="">
+					</div>
+					<div class="inner-box">
+						<h3>Hot Expensive</h3>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="image">
+						<img src="img/image_2.jpeg" alt="">
+					</div>
+					<div class="inner-box">
+						<h3>Super Healthy</h3>
+						<p>Lorem ipsum dolor sit amet</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="social-links">
+				<i><ion-icon name="logo-facebook"></ion-icon></i>
+				<i><ion-icon name="logo-instagram"></ion-icon></i>
+				<i><ion-icon name="logo-twitter"></ion-icon></i>
+				<i><ion-icon name="mail"></ion-icon></i>
+				
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+			  slidesPerView: 1,
+			  spaceBetween: 30,
+			  loop: true,
+			  pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			  },
+			  navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			  },
+			});
+		  </script>
+		  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	</body>
+</html>
